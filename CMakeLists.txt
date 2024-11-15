@@ -4,11 +4,11 @@
 #
 # usage: Edit "VARIABLES"-section to suit project requirements.
 #        For debug build:
-#          cmake -DCMAKE_TOOLCHAIN_FILE=cubeide-gcc.cmake  -S ./ -B Debug -G"Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug
-#          make -C Debug VERBOSE=1 -j
+#          cmake -DCMAKE_TOOLCHAIN_FILE=cubeide-gcc.cmake  -S ./ -B Debug -G Ninja -DCMAKE_BUILD_TYPE=Debug
+#          cmake --build Debug
 #        For release build:
-#          cmake -DCMAKE_TOOLCHAIN_FILE=cubeide-gcc.cmake  -S ./ -B Release -G"Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
-#          make -C Release VERBOSE=1 -j
+#          cmake -DCMAKE_TOOLCHAIN_FILE=cubeide-gcc.cmake  -S ./ -B Release -G Ninja -DCMAKE_BUILD_TYPE=Release
+#          cmake --build Release
 #############################################################################################################################
 cmake_minimum_required(VERSION 3.20)
 
